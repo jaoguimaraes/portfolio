@@ -1,14 +1,28 @@
 import React from "react";
+import Image from "../images/2024-5.png";
 
 export default function About() {
   return (
     <section>
-      <h2>Home</h2>
-      <p>Aqui será a tela Home nesta primeira versão</p>
+      <div>
+        <h2>Eu sou João Pedro</h2>
+        <p>Desenvolvedor backend</p>
+
+        Estudante de Ciencias da Computação
+
+        TI +10 anos | Desenvolvimento +1 ano
+      </div>
+
+      <div>
+        <img
+          src={Image}
+          alt="Imagem 1"
+          style={{ width: "45%", borderRadius: "10px" }}
+        />
+      </div>
     </section>
   );
 }
-
 
 /*Ideias para fazer aqui:
 - Uma foto minha atual e bem legal, grande, por cima do fundo
