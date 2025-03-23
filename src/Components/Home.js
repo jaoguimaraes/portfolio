@@ -28,7 +28,7 @@ export default function About() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 1.5 }}
         >
-          <p>Desenvolvedor backend</p>
+          <p>Desenvolvedor backend Jr.</p>
         </motion.div>
       </div>
 
