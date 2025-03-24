@@ -62,7 +62,14 @@ export default function About() {
           </motion.div>
         </div>
         <div className="about-text">
-          <h2 className="about-h2">Quem sou e o que faço</h2>
+          <motion.p
+            className="about-p"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.8, duration: 1 }}
+          >
+            <h2 className="about-h2">Quem sou e o que faço</h2>
+          </motion.p>
           <motion.p
             className="about-p"
             initial={{ y: 20, opacity: 0 }}
