@@ -10,11 +10,11 @@ import TypeScriptIcon from "../images/icons/typescript.png";
 import "../Styles/Home.css";
 import { motion } from "framer-motion";
 
-export default function About() {
+export default function Home() {
   return (
-    <section>
+    <section className="home-session">
       <div>
-        <h2>
+        <h2 className="home-h2">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -28,7 +28,7 @@ export default function About() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 1.5 }}
         >
-          <p>Desenvolvedor backend Jr.</p>
+          <p className="home-p">Desenvolvedor backend Jr.</p>
         </motion.div>
       </div>
 
@@ -99,12 +99,3 @@ export default function About() {
     </section>
   );
 }
-
-/*Ideias para fazer aqui:
-- Uma foto minha atual e bem legal, grande, por cima do fundo
-- Texto como: "EU SOU JOÃO PEDRO
-Sou desenvolvedor web (onde esta frase e o meu nome estarão em fontes diferents e legais)"
-- Quantos anos em contato com a tecnologia + quantos anos em contato com desenvolvimento
-- Minhas redes sociais (linkedIn, GitHub, WhatsApp)
-- Botão para download do meu currículo diretamente
-*/
