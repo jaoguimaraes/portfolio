@@ -27,7 +27,7 @@
   max-width: 300px;
   border-radius: 150px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  margin-top: 200px;
+  margin-top: 20px;
 }
 
 .social-icons {
@@ -50,9 +50,16 @@
 }
 
 .about-h2 {
-  font-size: 6ch;
+  font-size: 4ch;
   color: #333;
   margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.about-p {
+  font-size: 2.5ch;
+  color: #555;
+  line-height: 1.8;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -69,18 +76,10 @@
 
   .about-h2 {
     font-size: 2.3ch;
-    margin-top: -40px;
+    margin-top: 0;
   }
 
   .about-p {
     font-size: 2ch;
   }
-}
-
-.about-p {
-  font-size: 2.5ch;
-  color: #555;
-  line-height: 1.8;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
