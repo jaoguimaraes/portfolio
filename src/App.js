@@ -22,12 +22,12 @@ function App() {
             <li>
               <Link to="/experiences">Experiencias</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/projects">Projetos</Link>
             </li>
             <li>
               <Link to="/contact">Contato</Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </header>
@@ -35,8 +35,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/experiences" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
+          {/* <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} /> */}
           <Route path="/about" element={<About />} />
         </Routes>
       </main>
