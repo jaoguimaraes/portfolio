@@ -24,6 +24,22 @@ header {
   font-weight: 400;
 }
 
+@media (max-width: 768px) {
+  div {
+    flex: 1 1 100%;
+  }
+
+  header {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;

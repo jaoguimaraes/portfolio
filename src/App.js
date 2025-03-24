@@ -1,9 +1,9 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./Components/Home";
-import Projects from "./Components/Projects";
+// import Projects from "./Components/Projects";
 import Skills from "./Components/Experiences";
-import Contact from "./Components/Contact";
+// import Contact from "./Components/Contact";
 import About from "./Components/About";
 import "./Styles/App.css";
 
