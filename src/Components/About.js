@@ -1,10 +1,11 @@
 import React from "react";
 import "../Styles/About.css";
 import { motion } from "framer-motion";
-import ProfilePhoto from "../images/2024-5.png"; // Ajuste o caminho para sua foto
-import WhatsAppIcon from "../images/icons/whatsapp.png"; // Ícone do WhatsApp
-import LinkedInIcon from "../images/icons/linkedin.png"; // Ícone do LinkedIn
-import GitHubIcon from "../images/icons/github.png"; // Ícone do GitHub
+import ProfilePhoto from "../images/2024-5.png";
+import WhatsAppIcon from "../images/icons/whatsapp.png";
+import LinkedInIcon from "../images/icons/linkedin.png";
+import GitHubIcon from "../images/icons/github.png";
+import EmailIcon from "../images/icons/email.png";
 
 export default function About() {
   return (
@@ -36,6 +37,13 @@ export default function About() {
               rel="noopener noreferrer"
             >
               <img src={WhatsAppIcon} alt="WhatsApp" className="social-icon" />
+            </a>
+            <a
+              href="mailto:joao.pedrogs@live.com"
+              target="_blank"
+              rel="noop/ener noreferrer"
+            >
+              <img src={EmailIcon} alt="Email" className="social-icon" />
             </a>
             <a
               href="https://www.linkedin.com/in/joao-guimaraes-silva/"
