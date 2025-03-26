@@ -25,40 +25,61 @@ export default function About() {
           >
             <img src={ProfilePhoto} alt="João Pedro" className="profile-img" />
           </motion.div>
+
           <motion.div
-            className="social-icons"
+            className="social-container"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 1.2, duration: 1 }}
           >
-            <a
-              href="https://api.whatsapp.com/send?phone=5512981800280"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={WhatsAppIcon} alt="WhatsApp" className="social-icon" />
-            </a>
-            <a
-              href="mailto:joao.pedrogs@live.com"
-              target="_blank"
-              rel="noop/ener noreferrer"
-            >
-              <img src={EmailIcon} alt="Email" className="social-icon" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/joao-guimaraes-silva/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={LinkedInIcon} alt="LinkedIn" className="social-icon" />
-            </a>
-            <a
-              href="https://github.com/jaoguimaraes"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={GitHubIcon} alt="GitHub" className="social-icon" />
-            </a>
+            <div className="social-icons-row">
+              <a
+                href="https://api.whatsapp.com/send?phone=5512981800280"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={WhatsAppIcon}
+                  alt="WhatsApp"
+                  className="social-icon"
+                />
+              </a>
+              <a
+                href="mailto:joao.pedrogs@live.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={EmailIcon} alt="Email" className="social-icon" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/joao-guimaraes-silva/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={LinkedInIcon}
+                  alt="LinkedIn"
+                  className="social-icon"
+                />
+              </a>
+              <a
+                href="https://github.com/jaoguimaraes"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={GitHubIcon} alt="GitHub" className="social-icon" />
+              </a>
+            </div>
+
+            <div className="download-button-container">
+              <a
+                href="/curriculo-joao-pedro-guimaraes-da-silva.pdf"
+                download="Joao_Pedro_Backend_Developer.pdf"
+                className="cta-button"
+              >
+                Baixar Currículo
+              </a>
+            </div>
           </motion.div>
         </div>
         <div className="about-text">

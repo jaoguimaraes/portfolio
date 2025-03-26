@@ -32,8 +32,30 @@
 
 .social-icons {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons-container {
+  display: flex;
   justify-content: center;
-  gap: 20px;
+}
+
+.download-button-container {
+  margin-top: 40px;
+}
+
+.cta-button {
+  background-color: #4299e1;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  margin-top: 20px;
 }
 
 .social-icon {
