@@ -65,9 +65,8 @@ const Experiences = () => {
 
   return (
     <div className="experiences-container">
-
+    
       <div className="experiences-grid">
-        {/* Seção de Experiências Profissionais */}
         <div className="professional-experiences">
           <h2 className="section-title">Experiências Profissionais</h2>
           {professionalExperiences.map((exp) => (
@@ -97,7 +96,6 @@ const Experiences = () => {
           ))}
         </div>
 
-        {/* Seção de Projetos */}
         <div className="project-experiences">
           <h2 className="section-title">Projetos Destacados</h2>
           {projectExperiences.map((project) => (
