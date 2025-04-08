@@ -8,11 +8,12 @@ const Experiences = () => {
   const professionalExperiences = [
     {
       id: 1,
-      company: "Aristo",
+      company: "Primum",
       period: "Jan 2024 - Presente",
       roles: ["Estagiário de Desenvolvimento (Jan 2024 - Presente)"],
-      description:
-        "Atuo no desenvolvimento e manutenção de sistemas web utilizando React.js e Node.js. Participei da criação de novas funcionalidades para o sistema interno da empresa, melhorando a eficiência dos processos em 30%. Colaboração em equipe usando metodologias ágeis como Scrum.",
+      description: [
+        "Atualmente, estou em um estágio em desenvolvimento de software backend, com contato direto com tecnologias como MongoDB, Node.js, TypeScript, GraphQL e APIs RESTful. Participo de treinamentos constantes e pair programming quase diário com desenvolvedores seniores e plenos, o que tem contribuído bastante para meu crescimento técnico. Um dos focos do meu aprendizado é baseado no livro Scrum Essencial: Um guia prático para o mais popular processo Ágil, o que me ajuda a compreender e aplicar metodologias ágeis no dia a dia. Faço parte de todas as cerimônias do time, desde o planning até a retrospectiva, participando ativamente. Além das tarefas de backend, também recebo algumas demandas de frontend, utilizando React para implementações. Utilizamos o Bitbucket para versionamento de código e o Figma como apoio na padronização dos layouts e componentes no frontend.",
+      ],
     },
     {
       id: 2,
@@ -65,7 +66,6 @@ const Experiences = () => {
 
   return (
     <div className="experiences-container">
-    
       <div className="experiences-grid">
         <div className="professional-experiences">
           <h2 className="section-title">Experiências Profissionais</h2>
@@ -86,7 +86,13 @@ const Experiences = () => {
               </div>
               {expandedCard === exp.id && (
                 <div className="expanded-content">
-                  <p>{exp.description}</p>
+                  {Array.isArray(exp.description)
+                    ? exp.description.map((item, index) => (
+                        <p key={index}>{item}</p>
+                      ))
+                    : exp.description
+                        .split("\n")
+                        .map((item, index) => <p key={index}>{item}</p>)}
                 </div>
               )}
               <div className="expand-icon">
