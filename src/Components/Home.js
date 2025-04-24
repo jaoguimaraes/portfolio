@@ -58,7 +58,7 @@ export default function Home() {
             <div className="action-section">
               <a
                 href="/curriculo-joao-pedro-guimaraes-da-silva.pdf"
-                download="Joao_Pedro_Backend_Developer.pdf"
+                download="curriculo-joao-pedro-guimaraes.pdf"
                 className="cta-button"
               >
                 Baixar Currículo
