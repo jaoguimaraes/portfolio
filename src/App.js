@@ -1,13 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { FaSun, FaMoon } from "react-icons/fa";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./Components/Home";
-// import Projects from "./Components/Projects";
 import Skills from "./Components/Experiences";
-// import Contact from "./Components/Contact";
 import About from "./Components/About";
 import "./Styles/App.css";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(() => {
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    return localStorage.getItem("theme")
+      ? localStorage.getItem("theme") === "dark"
+      : prefersDark;
+  });
+
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.body.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [darkMode]);
+
   return (
     <>
       <header>
@@ -22,21 +40,23 @@ function App() {
             <li>
               <Link to="/experiences">Experiencias</Link>
             </li>
-            {/* <li>
-              <Link to="/projects">Projetos</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contato</Link>
-            </li> */}
+            <div className="App">
+              <button
+                onClick={() => setDarkMode(!darkMode)}
+                className="theme-toggle-button"
+                aria-label="Alternar tema"
+              >
+                {darkMode ? <FaSun color="white" /> : <FaMoon color="white" />}
+              </button>
+            </div>
           </ul>
         </nav>
       </header>
+
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/experiences" element={<Skills />} />
-          {/* <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} /> */}
           <Route path="/about" element={<About />} />
         </Routes>
       </main>
