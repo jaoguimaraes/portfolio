@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaSun, FaMoon } from "react-icons/fa";
+import { FaSun, FaMoon, FaBars, FaTimes } from "react-icons/fa";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./Components/Home";
 import Skills from "./Components/Experiences";
@@ -16,6 +16,9 @@ function App() {
       : prefersDark;
   });
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
     if (darkMode) {
       document.body.classList.add("dark");
@@ -26,11 +29,37 @@ function App() {
     }
   }, [darkMode]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+      if (window.innerWidth >= 768) {
+        setMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <>
       <header>
         <nav>
-          <ul>
+          {isMobile && (
+            <button
+              className="hamburger-button"
+              onClick={toggleMenu}
+              aria-label="Abrir menu"
+            >
+              {menuOpen ? <FaTimes /> : <FaBars />}
+            </button>
+          )}
+
+          <ul className={`desktop-menu ${isMobile ? "hidden" : ""}`}>
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -40,16 +69,39 @@ function App() {
             <li>
               <Link to="/experiences">Experiencias</Link>
             </li>
-            <div className="App">
-              <button
-                onClick={() => setDarkMode(!darkMode)}
-                className="theme-toggle-button"
-                aria-label="Alternar tema"
-              >
-                {darkMode ? <FaSun color="white" /> : <FaMoon color="white" />}
-              </button>
-            </div>
           </ul>
+
+          <div className={`theme-toggle-container ${menuOpen ? "hidden" : ""}`}>
+            <button
+              onClick={() => setDarkMode(!darkMode)}
+              className="theme-toggle-button"
+              aria-label="Alternar tema"
+            >
+              {darkMode ? <FaSun color="white" /> : <FaMoon color="white" />}
+            </button>
+          </div>
+
+          {isMobile && menuOpen && (
+            <div className="mobile-menu">
+              <ul>
+                <li>
+                  <Link to="/" onClick={toggleMenu}>
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/About" onClick={toggleMenu}>
+                    Sobre
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/experiences" onClick={toggleMenu}>
+                    Experiencias
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          )}
         </nav>
       </header>
 
