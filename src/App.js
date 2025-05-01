@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaSun, FaMoon, FaBars, FaTimes } from "react-icons/fa";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, useLocation } from "react-router-dom";
 import Home from "./Components/Home";
 import Skills from "./Components/Experiences";
 import About from "./Components/About";
@@ -18,6 +18,7 @@ function App() {
 
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     if (darkMode) {
@@ -45,6 +46,10 @@ function App() {
     setMenuOpen(!menuOpen);
   };
 
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
+
   return (
     <>
       <header>
@@ -59,19 +64,33 @@ function App() {
             </button>
           )}
 
-          <ul className={`desktop-menu ${isMobile ? "hidden" : ""}`}>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/About">Sobre</Link>
-            </li>
-            <li>
-              <Link to="/experiences">Experiencias</Link>
-            </li>
-          </ul>
+          {!isMobile && (
+            <ul className="desktop-menu">
+              <li>
+                <Link to="/" className={isActive("/") ? "active" : ""}>
+                  HOME
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/about"
+                  className={isActive("/about") ? "active" : ""}
+                >
+                  SOBRE
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/experiences"
+                  className={isActive("/experiences") ? "active" : ""}
+                >
+                  EXPERIENCIAS
+                </Link>
+              </li>
+            </ul>
+          )}
 
-          <div className={`theme-toggle-container ${menuOpen ? "hidden" : ""}`}>
+          <div className="theme-toggle-container">
             <button
               onClick={() => setDarkMode(!darkMode)}
               className="theme-toggle-button"
@@ -82,21 +101,27 @@ function App() {
           </div>
 
           {isMobile && menuOpen && (
-            <div className="mobile-menu">
-              <ul>
+            <div className="mobile-menu active">
+              <ul className="mobile-menu-list">
                 <li>
-                  <Link to="/" onClick={toggleMenu}>
-                    Home
+                  <Link to="/" className={isActive("/") ? "active" : ""}>
+                    HOME
                   </Link>
                 </li>
                 <li>
-                  <Link to="/About" onClick={toggleMenu}>
-                    Sobre
+                  <Link
+                    to="/about"
+                    className={isActive("/about") ? "active" : ""}
+                  >
+                    SOBRE
                   </Link>
                 </li>
                 <li>
-                  <Link to="/experiences" onClick={toggleMenu}>
-                    Experiencias
+                  <Link
+                    to="/experiences"
+                    className={isActive("/experiences") ? "active" : ""}
+                  >
+                    EXPERIENCIAS
                   </Link>
                 </li>
               </ul>
