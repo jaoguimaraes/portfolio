@@ -106,7 +106,7 @@ export default function About() {
             <strong>GraphQL</strong>.
             <br />
             <br />
-            Como estagiário, neste último 1 ano e meio atuo tanto no backend
+            Como estagiário, neste último 1 ano e meio atuei tanto no backend
             quanto no frontend, buscando aprimorar minhas habilidades e aprender
             com profissionais seniores.{" "}
             <strong>
