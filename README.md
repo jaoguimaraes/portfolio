@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# 💼 João Pedro Guimarães da Silva
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🎯 Desenvolvedor Full Stack | React • Node.js • PostgreSQL • EC2 • Zabbix • Ansible • Terraform
+📍 Joinville – SC, Brasil  
+📧 joao.pedrogs@live.com | 📱 (12) 9 8180-0280  
+🔗 [LinkedIn](https://www.linkedin.com/in/joao-guimaraes-silva)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 👋 Sobre mim
 
-### `npm start`
+Sou um desenvolvedor com foco em backend e mais de 10 anos de experiência em TI atuando em áreas como logística, bancária e aeronáutica. Hoje, mergulho de cabeça em projetos utilizando **Node.js**, **React**, **PostgreSQL**, **GraphQL**, e práticas modernas de desenvolvimento como **pair programming** e **Scrum**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Apaixonado por aprender e ensinar, também me dedico a escrever scripts otimizados, documentar processos e melhorar continuamente a experiência dos usuários e de futuros desenvolvedores.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tecnologias e Ferramentas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Linguagens:** JavaScript, TypeScript, SQL
+- **Front-end:** React
+- **Back-end:** Node.js, Express, GraphQL, REST APIs
+- **Banco de Dados:** MongoDB, PostgreSQL
+- **Infraestrutura & DevOps:** EC2 (AWS), Zabbix, Ansible, Terraform
+- **Versionamento:** Git, GitHub
+- **Testes:** Jest, Supertest
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📂 Projetos em Destaque
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Projeto | Descrição | Tecnologias |
+|--------|-----------|-------------|
+| **CriptoTXT** | Aplicação para criptografar/descriptografar arquivos `.txt` com escolha de modo via UI. | Node.js, TypeScript, React, Express |
+| **Aristo Analytics** | Scripts para importar, processar e exibir dados de uso da plataforma educacional Aristo. | MongoDB, Node.js, EventStoreDB |
+| **Painel de Matrícula Inteligente** | Integração entre backend e frontend para controle de cursos trial em cadastro de alunos. | GraphQL, React, MongoDB |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🤝 Vamos conversar?
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Sinta-se à vontade para me chamar no [LinkedIn](https://www.linkedin.com/in/joao-guimaraes-silva) ou pelo e-mail joao.pedrogs@live.com. Estou sempre aberto a novas conexões, parcerias e oportunidades!
