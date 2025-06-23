@@ -9,6 +9,7 @@ import GraphQLIcon from "../images/icons/graphql.png";
 import JavaScriptIcon from "../images/icons/javascript.png";
 import MongoDBIcon from "../images/icons/mongodb.png";
 import NodeJSIcon from "../images/icons/nodejs.png";
+import ReactJSIcon from "../images/icons/reactjs.png";
 import TypeScriptIcon from "../images/icons/typescript.png";
 import "../Styles/Home.css";
 import { motion } from "framer-motion";
@@ -26,7 +27,7 @@ export default function Home() {
             <h1 className="home-title">
               Olá, eu sou <span className="name-highlight">João Pedro</span>
             </h1>
-            <h2 className="home-subtitle">Desenvolvedor Backend</h2>
+            <h2 className="home-subtitle">Desenvolvedor Full Stack Júnior</h2>
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
@@ -131,6 +132,10 @@ export default function Home() {
           <div className="tech-icon">
             <img src={JavaScriptIcon} alt="JavaScript" />
             <span>JavaScript</span>
+          </div>
+          <div className="tech-icon">
+            <img src={ReactJSIcon} alt="React.js" />
+            <span>React.js</span>
           </div>
           <div className="tech-icon">
             <img src={MongoDBIcon} alt="MongoDB" />
