@@ -6,8 +6,10 @@ import WhatsAppIcon from "../images/icons/whatsapp.png";
 import LinkedInIcon from "../images/icons/linkedin.png";
 import GitHubIcon from "../images/icons/github.png";
 import EmailIcon from "../images/icons/email.png";
+import { Trans, useTranslation } from "react-i18next";
 
 export default function About() {
+  const { t } = useTranslation();
   return (
     <motion.section
       className="about-section"
@@ -77,7 +79,7 @@ export default function About() {
                 download="Joao_Pedro_Backend_Developer.pdf"
                 className="cta-button"
               >
-                Baixar Currículo
+                {t("about.button")}
               </a>
             </div>
           </motion.div>
@@ -89,7 +91,7 @@ export default function About() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.8, duration: 1 }}
           >
-            <h2 className="about-h2">Quem sou e o que faço</h2>
+            <h2 className="about-h2">{t("about.title")}</h2>
           </motion.p>
           <motion.p
             className="about-p"
@@ -97,22 +99,14 @@ export default function About() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.8, duration: 1 }}
           >
-            Profissional de tecnologia com mais de 10 anos de experiência, atuei
-            em diversas áreas de TI, desde suporte ao cliente até sustentação de
-            sistemas e infraestrutura. Atualmente, estou focado no
-            desenvolvimento web, com experiência em tecnologias como{" "}
-            <strong>JavaScript</strong>,<strong>TypeScript</strong>,{" "}
-            <strong>Node.js</strong>, <strong>MongoDB</strong> e{" "}
-            <strong>GraphQL</strong>.
-            <br />
-            <br />
-            Neste último 1 ano e meio atuei tanto no backend
-            quanto no frontend, buscando aprimorar minhas habilidades e aprender
-            com profissionais seniores.{" "}
-            <strong>
-              Se você está procurando um desenvolvedor full stack júnior dedicado e com uma
-              sólida base técnica, você acabou de encontrá-lo!
-            </strong>
+            {" "}
+            <Trans
+              i18nKey="about.description"
+              components={{
+                bold: <strong />,
+                br: <br />,
+              }}
+            />
           </motion.p>
         </div>
       </div>

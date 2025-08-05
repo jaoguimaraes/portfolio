@@ -1,0 +1,86 @@
+{
+  "home": {
+    "title": "Hi, I am <highlight>João Pedro</highlight>",
+    "subtitle": "Junior Full Stack Developer",
+    "highlights": {
+      "item1": "Over 1 year of daily experience with development",
+      "item2": "Studying Computer Science with a focus on Fullstack",
+      "item3": "Passionate about technology and attentive to market trends",
+      "item4": "The curious and technical developer you were looking for!"
+    },
+    "button": "Download Resume",
+    "technologies": "Technologies I work with"
+  },
+
+  "about": {
+    "title": "Who I am and what I do",
+    "description": "Technology professional with over 10 years of experience, I've worked in various IT areas, from customer support to systems and infrastructure maintenance. Currently, I’m focused on web development with experience in technologies like <bold>JavaScript</bold>, <bold>TypeScript</bold>, <bold>Node.js</bold>, <bold>MongoDB</bold>, and <bold>GraphQL</bold>.<br/><br/>Over the past year and a half, I’ve worked on both backend and frontend, seeking to improve my skills and learn from senior professionals. <bold>If you’re looking for a dedicated junior full stack developer with a solid technical foundation, you’ve just found one!</bold>",
+    "button": "Download Resume"
+  },
+
+  "experiences": {
+    "professional": "Professional Experiences",
+    "projects": "Personal Projects",
+    "button": "View on GitHub",
+    "professionalList": [
+      {
+        "company": "Primum",
+        "period": "Jan 2024 - Apr 2025",
+        "roles": ["Full stack development (Jan 2024 - Apr 2025)"],
+        "description": [
+          "As a junior full stack developer, I work with technologies like MongoDB, Node.js, React, TypeScript, GraphQL, and RESTful APIs.",
+          "I actively participate in training and pair programming sessions with senior developers, which has accelerated my technical growth.",
+          "I have a solid foundation in agile methodologies, focusing on the Scrum framework as taught in the book Scrum Essentials.",
+          "I contribute to both backend and frontend tasks using React. We use Bitbucket for version control and Figma for visual component standards."
+        ]
+      },
+      {
+        "company": "DM",
+        "period": "Oct 2018 - Dec 2024",
+        "roles": [
+          "NOC - Network Operations Center (Jan 2024 - Dec 2024)",
+          "Sustentation Analyst II (Dec 2021 - Jun 2024)",
+          "Junior Support Analyst (Oct 2019 - Dec 2021)",
+          "Customer Support Consultant N2 (Mar 2019 - Sep 2019)",
+          "Customer Support Consultant N1 (Oct 2018 - Feb 2019)"
+        ],
+        "description": [
+          "Corporate customer service, network and systems incident analysis and resolution.",
+          "Promoted three times for exceptional performance.",
+          "Actively led a technical support team of 5 members.",
+          "Created technical documentation and trained new employees."
+        ]
+      },
+      {
+        "company": "Lansolution",
+        "period": "Mar 2015 - Sep 2017",
+        "roles": ["IT Technician (Mar 2015 - Sep 2017)"],
+        "description": [
+          "Maintenance of hardware and software in computers and notebooks.",
+          "Installation and configuration of local networks.",
+          "On-site and remote customer service.",
+          "Inventory management of parts and equipment."
+        ]
+      }
+    ],
+    "projectList": [
+      {
+        "key": "jotawallet",
+        "name": "Jotawallet",
+        "description": "Personal finance management app with an intuitive dashboard and customizable reports..",
+        "link": "https://github.com/jaoguimaraes/jotawallet"
+      },
+      {
+        "key": "text-encryption",
+        "name": "Text Encryption",
+        "description": "Tool for text encryption using AES-256 algorithms with a user-friendly interface.",
+        "link": "https://github.com/jaoguimaraes/project-for-text-encryption"
+      }
+    ]
+  },
+  "header": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "experiencie": "EXPERIENCES"
+  }
+}

@@ -164,7 +164,7 @@ body.dark .tech-title {
 
 .tech-icons-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
   gap: 1.5rem;
   max-width: 900px;
   margin: 0 auto;

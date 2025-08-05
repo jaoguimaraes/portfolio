@@ -5,8 +5,19 @@ import Home from "./Components/Home";
 import Skills from "./Components/Experiences";
 import About from "./Components/About";
 import "./Styles/App.css";
+import "./i18n";
+import { useTranslation } from "react-i18next";
+import Flag from "react-world-flags";
 
 function App() {
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+
+  const toggleLanguage = () => {
+    const newLang = currentLanguage === "pt" ? "en" : "pt";
+    i18n.changeLanguage(newLang);
+  };
+
   const [darkMode, setDarkMode] = useState(() => {
     const prefersDark = window.matchMedia(
       "(prefers-color-scheme: dark)"
@@ -63,12 +74,11 @@ function App() {
               {menuOpen ? <FaTimes /> : <FaBars />}
             </button>
           )}
-
           {!isMobile && (
             <ul className="desktop-menu">
               <li>
                 <Link to="/" className={isActive("/") ? "active" : ""}>
-                  HOME
+                  {t("header.home")}
                 </Link>
               </li>
               <li>
@@ -76,7 +86,7 @@ function App() {
                   to="/about"
                   className={isActive("/about") ? "active" : ""}
                 >
-                  SOBRE
+                  {t("header.about")}
                 </Link>
               </li>
               <li>
@@ -84,7 +94,7 @@ function App() {
                   to="/experiences"
                   className={isActive("/experiences") ? "active" : ""}
                 >
-                  EXPERIENCIAS
+                  {t("header.experiencie")}
                 </Link>
               </li>
             </ul>
@@ -97,6 +107,13 @@ function App() {
               aria-label="Alternar tema"
             >
               {darkMode ? <FaSun color="white" /> : <FaMoon color="white" />}
+            </button>
+
+            <button onClick={toggleLanguage} className="language-toggle-button">
+              <Flag
+                code={currentLanguage === "pt" ? "US" : "BR"}
+                style={{ width: 24, height: 16 }}
+              />
             </button>
           </div>
 

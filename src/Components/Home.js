@@ -11,10 +11,14 @@ import MongoDBIcon from "../images/icons/mongodb.png";
 import NodeJSIcon from "../images/icons/nodejs.png";
 import ReactJSIcon from "../images/icons/reactjs.png";
 import TypeScriptIcon from "../images/icons/typescript.png";
+import PostgreSQLIcon from "../images/icons/postgresql.png";
 import "../Styles/Home.css";
 import { motion } from "framer-motion";
+import { Trans, useTranslation } from "react-i18next";
 
 export default function Home() {
+  const { t } = useTranslation();
+
   return (
     <section className="home-session">
       <div className="content-wrapper">
@@ -25,9 +29,12 @@ export default function Home() {
             transition={{ delay: 0.5, duration: 1 }}
           >
             <h1 className="home-title">
-              Olá, eu sou <span className="name-highlight">João Pedro</span>
+              <Trans
+                i18nKey="home.title"
+                components={{ highlight: <span className="name-highlight" /> }}
+              />
             </h1>
-            <h2 className="home-subtitle">Desenvolvedor Full Stack Júnior</h2>
+            <h2>{t("home.subtitle")}</h2>
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
@@ -39,19 +46,19 @@ export default function Home() {
               <ul>
                 <li>
                   <span className="highlight-icon">▹</span>
-                  Mais de 1 ano de experiência diária com desenvolvimento
+                  {t("home.highlights.item1")}
                 </li>
                 <li>
                   <span className="highlight-icon">▹</span>
-                  Cursando Ciência da Computação com ênfase em Fullstack
+                  {t("home.highlights.item2")}
                 </li>
                 <li>
                   <span className="highlight-icon">▹</span>
-                  Apaixonado por tecnologia e atento as novidades do mercado
+                  {t("home.highlights.item3")}
                 </li>
                 <li>
-                  <span className="highlight-icon">▹</span>O Desenvolvedor
-                  curioso e técnico que você estava procurando!
+                  <span className="highlight-icon">▹</span>
+                  {t("home.highlights.item4")}
                 </li>
               </ul>
             </div>
@@ -62,7 +69,7 @@ export default function Home() {
                 download="curriculo-joao-pedro-guimaraes.pdf"
                 className="cta-button"
               >
-                Baixar Currículo
+                {t("home.button")}
               </a>
 
               <div className="social-links">
@@ -119,7 +126,7 @@ export default function Home() {
         animate={{ opacity: 1 }}
         transition={{ delay: 2.5, duration: 1 }}
       >
-        <h3 className="tech-title">Tecnologias que trabalho</h3>
+        <h3 className="tech-title">{t("home.technologies")}</h3>
         <div className="tech-icons-grid">
           <div className="tech-icon">
             <img src={NodeJSIcon} alt="Node.js" />
@@ -148,6 +155,10 @@ export default function Home() {
           <div className="tech-icon">
             <img src={GitIcon} alt="Git" />
             <span>Git</span>
+          </div>
+          <div className="tech-icon">
+            <img src={PostgreSQLIcon} alt="PostgreSQL" />
+            <span>PostgreSQL</span>
           </div>
         </div>
       </motion.div>

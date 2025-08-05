@@ -76,12 +76,22 @@ nav {
   border-radius: 2px;
 }
 
+.language-toggle-button Flag,
+.language-toggle-button img {
+  width: 28px !important; /* Aumentado de 24px */
+  height: 20px !important; /* Aumentado de 16px */
+  border-radius: 2px;
+}
+
 /* Botão de Tema no Desktop */
 .theme-toggle-container {
   position: absolute;
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /* Botão Hamburger */
@@ -169,6 +179,39 @@ nav {
 
 .theme-toggle-button:hover {
   transform: scale(1.1);
+}
+
+.language-toggle-button {
+  background: none !important;
+  border: none !important;
+  padding: 5px !important;
+  margin: 0 5px !important;
+  cursor: pointer;
+  line-height: 1;
+  color: white !important;
+  transition: transform 0.3s ease, color 0.3s ease;
+  outline: none !important;
+  box-shadow: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.dark .language-toggle-button {
+  color: #bbbbbb !important;
+}
+
+body.dark .language-toggle-button:hover {
+  transform: scale(1.1);
+}
+
+.language-toggle-button:hover {
+  transform: scale(1.1);
+}
+
+.language-toggle-button:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 /* Dark Mode Styles */
