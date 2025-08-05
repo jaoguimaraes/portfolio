@@ -36,7 +36,6 @@ nav {
   position: relative;
 }
 
-/* Menu Desktop */
 .desktop-menu {
   display: flex;
   list-style: none;
@@ -78,12 +77,11 @@ nav {
 
 .language-toggle-button Flag,
 .language-toggle-button img {
-  width: 28px !important; /* Aumentado de 24px */
-  height: 20px !important; /* Aumentado de 16px */
+  width: 28px !important;
+  height: 20px !important;
   border-radius: 2px;
 }
 
-/* Botão de Tema no Desktop */
 .theme-toggle-container {
   position: absolute;
   right: 20px;
@@ -94,7 +92,6 @@ nav {
   gap: 10px;
 }
 
-/* Botão Hamburger */
 .hamburger-button {
   background: none;
   border: none;
@@ -109,7 +106,6 @@ nav {
   z-index: 1001;
 }
 
-/* Menu Mobile */
 .mobile-menu {
   position: absolute;
   left: 50px;
@@ -156,11 +152,11 @@ nav {
   position: absolute;
   bottom: 5px;
   left: 0;
-  width: calc(100% - 10px); /* Ajuste para o padding */
+  width: calc(100% - 10px);
   height: 3px;
   background: #4299e1;
   border-radius: 2px;
-  margin: 0 5px; /* Compensa o padding */
+  margin: 0 5px;
 }
 
 .mobile-menu a:hover {
@@ -214,7 +210,6 @@ body.dark .language-toggle-button:hover {
   box-shadow: none !important;
 }
 
-/* Dark Mode Styles */
 body.dark .desktop-menu a {
   color: #bbbbbb;
 }
@@ -235,16 +230,21 @@ body.dark .theme-toggle-button:hover {
   color: #bb86fc;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
-  .desktop-menu {
-    display: none;
+  header.mobile-menu-open .theme-toggle-container {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
   }
 
-  .mobile-menu a {
-    font-size: 0.85rem;
-    padding: 10px 5px;
+  .theme-toggle-container {
+    transition: opacity 0.3s ease;
   }
+}
+
+.mobile-menu a {
+  font-size: 0.85rem;
+  padding: 10px 5px;
 }
 
 @media (min-width: 769px) {

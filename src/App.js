@@ -63,7 +63,7 @@ function App() {
 
   return (
     <>
-      <header>
+      <header className={menuOpen ? "mobile-menu-open" : ""}>
         <nav>
           {isMobile && (
             <button
@@ -122,7 +122,7 @@ function App() {
               <ul className="mobile-menu-list">
                 <li>
                   <Link to="/" className={isActive("/") ? "active" : ""}>
-                    HOME
+                    {t("header.home")}
                   </Link>
                 </li>
                 <li>
@@ -130,7 +130,7 @@ function App() {
                     to="/about"
                     className={isActive("/about") ? "active" : ""}
                   >
-                    SOBRE
+                    {t("header.about")}
                   </Link>
                 </li>
                 <li>
@@ -138,7 +138,7 @@ function App() {
                     to="/experiences"
                     className={isActive("/experiences") ? "active" : ""}
                   >
-                    EXPERIENCIAS
+                    {t("header.experiencie")}
                   </Link>
                 </li>
               </ul>
