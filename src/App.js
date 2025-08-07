@@ -111,7 +111,7 @@ function App() {
 
             <button onClick={toggleLanguage} className="language-toggle-button">
               <Flag
-                code={currentLanguage === "pt" ? "US" : "BR"}
+                code={currentLanguage === "pt" ? "BR" : "US"}
                 style={{ width: 24, height: 16 }}
               />
             </button>
