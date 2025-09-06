@@ -1,12 +1,12 @@
 {
   "home": {
     "title": "Olá, eu sou <highlight>João Pedro</highlight>",
-    "subtitle": "Desenvolvedor Full Stack Júnior",
+    "subtitle": "Desenvolvedor Backend",
     "highlights": {
-      "item1": "Mais de 1 ano de experiência diária com desenvolvimento",
+      "item1": "Mais de 10 anos de experiencia em TI atuando em diversos setores",
       "item2": "Cursando Ciência da Computação com ênfase em Fullstack",
       "item3": "Apaixonado por tecnologia e atento às novidades do mercado",
-      "item4": "O Desenvolvedor curioso e técnico que você estava procurando!"
+      "item4": "O profissional curioso e técnico que você estava procurando!"
     },
     "button": "Baixar Currículo",
     "technologies": "Tecnologias que trabalho"
@@ -21,7 +21,6 @@
   "experiences": {
     "professional": "Experiências Profissionais",
     "projects": "Projetos Pessoais",
-    "button": "Ver no GitHub",
     "professionalList": [
       {
         "company": "Primum",
@@ -66,15 +65,13 @@
     "projectList": [
       {
         "key": "jotawallet",
-        "name": "Jotawallet",
-        "description": "Aplicativo de gestão financeira pessoal com dashboard intuitivo e relatórios customizáveis.",
-        "link": "https://github.com/jaoguimaraes/jotawallet"
+        "name": "Em construção",
+        "description": "Aplicativo de gestão financeira pessoal com dashboard intuitivo e relatórios customizáveis."
       },
       {
         "key": "text-encryption",
-        "name": "Text Encryption",
-        "description": "Ferramenta para criptografia de textos usando algoritmos AES-256 com interface amigável.",
-        "link": "https://github.com/jaoguimaraes/project-for-text-encryption"
+        "name": "Em construção",
+        "description": "Ferramenta para criptografia de textos usando algoritmos AES-256 com interface amigável."
       }
     ]
   },

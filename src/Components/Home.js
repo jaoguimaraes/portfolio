@@ -12,6 +12,9 @@ import NodeJSIcon from "../images/icons/nodejs.png";
 import ReactJSIcon from "../images/icons/reactjs.png";
 import TypeScriptIcon from "../images/icons/typescript.png";
 import PostgreSQLIcon from "../images/icons/postgresql.png";
+import ZabbixIcon from "../images/icons/zabbix.png";
+import GrafanaIcon from "../images/icons/grafana.png";
+import DataDogIcon from "../images/icons/datadog.png";
 import "../Styles/Home.css";
 import { motion } from "framer-motion";
 import { Trans, useTranslation } from "react-i18next";
@@ -128,6 +131,18 @@ export default function Home() {
       >
         <h3 className="tech-title">{t("home.technologies")}</h3>
         <div className="tech-icons-grid">
+          <div className="tech-icon">
+            <img src={ZabbixIcon} alt="Zabbix" />
+            <span>Zabbix</span>
+          </div>
+          <div className="tech-icon">
+            <img src={GrafanaIcon} alt="Grafana" />
+            <span>Grafana</span>
+          </div>
+          <div className="tech-icon">
+            <img src={DataDogIcon} alt="DataDog" />
+            <span>Datadog</span>
+          </div>
           <div className="tech-icon">
             <img src={NodeJSIcon} alt="Node.js" />
             <span>Node.js</span>

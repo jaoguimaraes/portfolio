@@ -1,12 +1,12 @@
 {
   "home": {
     "title": "Hi, I am <highlight>João Pedro</highlight>",
-    "subtitle": "Junior Full Stack Developer",
+    "subtitle": "Backend Developer",
     "highlights": {
-      "item1": "Over 1 year of daily experience with development",
+      "item1": "Over 10 years of IT experience working in various sectors",
       "item2": "Studying Computer Science with a focus on Fullstack",
       "item3": "Passionate about technology and attentive to market trends",
-      "item4": "The curious and technical developer you were looking for!"
+      "item4": "The curious and technical professional you were looking for!"
     },
     "button": "Download Resume",
     "technologies": "Technologies I work with"
@@ -21,7 +21,6 @@
   "experiences": {
     "professional": "Professional Experiences",
     "projects": "Personal Projects",
-    "button": "View on GitHub",
     "professionalList": [
       {
         "company": "Primum",
@@ -66,15 +65,13 @@
     "projectList": [
       {
         "key": "jotawallet",
-        "name": "Jotawallet",
-        "description": "Personal finance management app with an intuitive dashboard and customizable reports..",
-        "link": "https://github.com/jaoguimaraes/jotawallet"
+        "name": "Under construction",
+        "description": "Personal finance management app with an intuitive dashboard and customizable reports.."
       },
       {
         "key": "text-encryption",
-        "name": "Text Encryption",
-        "description": "Tool for text encryption using AES-256 algorithms with a user-friendly interface.",
-        "link": "https://github.com/jaoguimaraes/project-for-text-encryption"
+        "name": "Under construction",
+        "description": "Tool for text encryption using AES-256 algorithms with a user-friendly interface."
       }
     ]
   },

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../Styles/Experiences.css";
 import Image from "../images/CRUD-Api.jpeg";
 import encrypt from "../images/encryption.jpeg";
-import { FiExternalLink, FiChevronDown, FiChevronUp } from "react-icons/fi";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
 
 const Experiences = () => {
@@ -66,7 +66,7 @@ const Experiences = () => {
         <div className="project-experiences">
           <h2 className="section-title">{t("experiences.projects")}</h2>
           {projectExperiences.map((project) => (
-            <div key={project.name} className="project-card">
+            <div key={project.key} className="project-card">
               <div
                 className="project-image"
                 style={{
@@ -75,15 +75,6 @@ const Experiences = () => {
               />
               <h3>{project.name}</h3>
               <p className="project-description">{project.description}</p>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link"
-              >
-                <FiExternalLink style={{ marginRight: "8px" }} />
-                {t("experiences.button")}
-              </a>
             </div>
           ))}
         </div>
