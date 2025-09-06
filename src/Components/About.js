@@ -69,7 +69,11 @@ export default function About() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={GitHubIcon} alt="GitHub" className="social-icon" />
+                <img
+                  src={GitHubIcon}
+                  alt="GitHub"
+                  className="social-icon github-icon"
+                />
               </a>
             </div>
 

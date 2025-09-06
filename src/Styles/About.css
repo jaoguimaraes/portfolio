@@ -47,6 +47,10 @@ body.dark .profile-img {
   align-items: center;
 }
 
+body.dark .social-icon.github-icon {
+  filter: invert(1);
+}
+
 .icons-container {
   display: flex;
   justify-content: center;

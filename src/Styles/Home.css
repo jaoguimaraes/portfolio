@@ -24,6 +24,10 @@
   justify-content: center;
 }
 
+body.dark .social-links img[src*="github"] {
+  filter: invert(1);
+}
+
 .profile-image {
   width: 320px;
   height: 320px;
