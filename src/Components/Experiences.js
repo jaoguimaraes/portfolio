@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "../Styles/Experiences.css";
-import Image from "../images/CRUD-Api.jpeg";
-import encrypt from "../images/encryption.jpeg";
-import { FiChevronDown, FiChevronUp } from "react-icons/fi";
+import { FiChevronDown, FiChevronUp, FiGithub, FiExternalLink } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
 
 const Experiences = () => {
@@ -13,11 +11,6 @@ const Experiences = () => {
   const projectExperiences = t("experiences.projectList", {
     returnObjects: true,
   });
-
-  const projectImages = {
-    jotawallet: Image,
-    "text-encryption": encrypt,
-  };
 
   const [expandedCard, setExpandedCard] = useState(null);
 
@@ -33,12 +26,17 @@ const Experiences = () => {
           {professionalExperiences.map((exp) => (
             <div
               key={exp.company}
-              className={`experience-card ${
+              className={`experience-card ${exp.current ? "current" : ""} ${
                 expandedCard === exp.company ? "expanded" : ""
               }`}
               onClick={() => toggleExpand(exp.company)}
             >
-              <h3>{exp.company}</h3>
+              <div className="card-header">
+                <h3>{exp.company}</h3>
+                {exp.current && (
+                  <span className="current-badge">Atual</span>
+                )}
+              </div>
               <p className="period">{exp.period}</p>
               <div className="roles">
                 {exp.roles.map((role, index) => (
@@ -67,14 +65,34 @@ const Experiences = () => {
           <h2 className="section-title">{t("experiences.projects")}</h2>
           {projectExperiences.map((project) => (
             <div key={project.key} className="project-card">
-              <div
-                className="project-image"
-                style={{
-                  backgroundImage: `url(${projectImages[project.key]})`,
-                }}
-              />
               <h3>{project.name}</h3>
               <p className="project-description">{project.description}</p>
+              <div className="project-links">
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <FiGithub />
+                    GitHub
+                  </a>
+                )}
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <FiExternalLink />
+                    Demo
+                  </a>
+                )}
+              </div>
             </div>
           ))}
         </div>

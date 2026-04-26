@@ -1,83 +1,218 @@
 {
   "home": {
     "title": "Olá, eu sou <highlight>João Pedro</highlight>",
-    "subtitle": "Desenvolvedor Backend",
+    "subtitle": "Automação · Full Stack · N8N · IA · Node.js",
+    "tagline": "Construo sistemas que trabalham enquanto você dorme.",
+    "currentlyBuilding": "Construindo agora",
     "highlights": {
-      "item1": "Mais de 10 anos de experiencia em TI atuando em diversos setores",
-      "item2": "Cursando Ciência da Computação com ênfase em Fullstack",
-      "item3": "Apaixonado por tecnologia e atento às novidades do mercado",
-      "item4": "O profissional curioso e técnico que você estava procurando!"
+      "item1": "10+ anos em TI: bancário, logístico, aeronáutico e de saúde",
+      "item2": "Especialista em N8N + OpenAI, automatizo o que é complexo",
+      "item3": "Construí do zero toda a stack interna de uma empresa real",
+      "item4": "Aberto a trabalho remoto global: CLT, PJ ou full-time remote"
     },
     "button": "Baixar Currículo",
-    "technologies": "Tecnologias que trabalho"
+    "technologies": "Minhas stacks",
+    "stats": {
+      "systems": "sistemas em produção",
+      "students": "alunos gerenciados",
+      "automations": "automações criadas",
+      "years": "anos em TI"
+    },
+    "demo": {
+      "title": "Teste uma automação ao vivo",
+      "subtitle": "Selecione um cenário e veja executar passo a passo",
+      "placeholder": "Selecione um cenário para executar",
+      "hint": "Executa automaticamente · clique em um cenário para controlar"
+    },
+    "techCategories": {
+      "automation": "Automação & IA",
+      "backend": "Backend & Banco de Dados",
+      "infra": "Infra & DevOps"
+    }
   },
 
   "about": {
     "title": "Quem sou e o que faço",
-    "description": "Profissional de tecnologia com mais de 10 anos de experiência, atuei em diversas áreas de TI, desde suporte ao cliente até sustentação de sistemas e infraestrutura. Atualmente, estou focado no desenvolvimento web, com experiência em tecnologias como <bold>JavaScript</bold>, <bold>TypeScript</bold>, <bold>Node.js</bold>, <bold>MongoDB</bold> e <bold>GraphQL</bold>.<br/><br/>Neste último 1 ano e meio atuei tanto no backend quanto no frontend, buscando aprimorar minhas habilidades e aprender com profissionais seniores. <bold>Se você está procurando um desenvolvedor full stack júnior dedicado e com uma sólida base técnica, você acabou de encontrá-lo!</bold>",
+    "description": "Desenvolvedor com mais de 10 anos de experiência em TI, atuei em setores exigentes como bancário, logístico, aeronáutico e de saúde. Hoje meu foco é em <bold>automações inteligentes e desenvolvimento full stack</bold> ajudando empresas a ganhar tempo e escala com tecnologia.<br/><br/>Trabalho com <bold>N8N</bold> e <bold>OpenAI</bold> para construir automações de alto impacto, desde integrações simples até fluxos complexos com IA. No desenvolvimento, uso <bold>Node.js</bold>, <bold>TypeScript</bold>, <bold>React</bold>, <bold>GraphQL</bold> e bancos como <bold>PostgreSQL (Supabase)</bold> e <bold>MongoDB</bold>, com infraestrutura em <bold>AWS (EC2)</bold>.<br/><br/>Tenho vivência com monitoramento usando Zabbix, Grafana e Datadog, o que me permite construir soluções pensando em estabilidade e produção desde o primeiro dia. <bold>Disponível para trabalho remoto ou híbrido, CLT ou PJ.</bold>",
     "button": "Baixar Currículo"
   },
 
   "experiences": {
     "professional": "Experiências Profissionais",
-    "projects": "Projetos Pessoais",
+    "projects": "Repositórios",
     "professionalList": [
+      {
+        "company": "Euphonia Oratória",
+        "period": "Set 2025 - Presente",
+        "current": true,
+        "roles": ["Desenvolvedor Backend (Set 2025 - Presente)"],
+        "description": [
+          "Responsável pelo desenvolvimento e manutenção de todas as automações da empresa, conectando ferramentas, APIs e fluxos internos para aumentar a eficiência operacional.",
+          "Criação de automações com N8N para geração e publicação automática de conteúdo em redes sociais.",
+          "Integração entre plataformas usando Supabase, JavaScript e APIs REST.",
+          "Gestão da infraestrutura técnica da empresa de forma autônoma."
+        ]
+      },
       {
         "company": "Primum",
         "period": "Jan 2024 - Abr 2025",
-        "roles": ["Desenvolvimento full stack (Jan 2024 - Abr 2025)"],
+        "current": false,
+        "roles": ["Desenvolvedor full stack (Jan 2024 - Abr 2025)"],
         "description": [
-          "Como desenvolvedor full stack júnior, atuo com tecnologias como MongoDB, Node.js, React, TypeScript, GraphQL e APIs RESTful.",
-          "Participo ativamente de treinamentos e sessões de pair programming com desenvolvedores mais experientes, o que tem acelerado meu desenvolvimento técnico.",
-          "Tenho base sólida em metodologias ágeis, com foco no framework Scrum, conforme os aprendizados do livro Scrum Essencial.",
-          "Contribuo tanto com tarefas de backend quanto frontend, utilizando React. Usamos Bitbucket para versionamento e Figma para padronização visual."
+          "Implementei IA na plataforma para responder dúvidas dos alunos, reduzindo a carga de suporte humano.",
+          "Participei das métricas de melhoria da empresa, gerando uma economia anual de mais de R$ 100.000,00.",
+          "Participei da migração da plataforma para nova tecnologia, unificando projetos e gerando economia financeira e satisfação dos clientes.",
+          "Responsável por receber, analisar e tratar bugs relatados pelos alunos sobre a plataforma.",
+          "Atuei tanto no backend quanto no frontend com MongoDB, Node.js, React, TypeScript, GraphQL e APIs RESTful."
         ]
       },
       {
         "company": "DM",
         "period": "Out 2018 - Dez 2024",
+        "current": false,
         "roles": [
-          "NOC - Network Operations Center (Jan 2024 - Dez 2024)",
-          "Analista de Sustentação II (Dez 2021 - Jun 2024)",
+          "NOC - Network Operations Center (Jun 2024 - Dez 2024)",
+          "Analista de Sistemas (Dez 2021 - Jun 2024)",
           "Analista de Suporte Junior (Out 2019 - Dez 2021)",
           "Consultor de Relacionamento N2 (Mar 2019 - Set 2019)",
           "Consultor de Relacionamento N1 (Out 2018 - Fev 2019)"
         ],
         "description": [
-          "Atendimento a clientes corporativos, análise e resolução de incidentes de rede e sistemas.",
-          "Promovido três vezes por desempenho excepcional.",
-          "Participação ativa na liderança de equipe de suporte técnico com 5 membros.",
-          "Criação de documentação técnica e treinamento de novos colaboradores."
+          "Criação e manutenção de dashboards de monitoramento com Grafana e alertas com Zabbix.",
+          "Participação na ação que evitou um golpe milionário contra a empresa.",
+          "Promovido três vezes por desempenho excepcional ao longo de 6 anos.",
+          "Responsável pela sustentação de autorizadores de transações, mantendo 100% de disponibilidade.",
+          "Criação de automações para processos bancários (vans bancárias, FTP, conciliação de relatórios).",
+          "Liderança de equipe de suporte técnico e criação de documentação técnica."
         ]
       },
       {
         "company": "Lansolution",
         "period": "Mar 2015 - Set 2017",
+        "current": false,
         "roles": ["Técnico de Informática (Mar 2015 - Set 2017)"],
         "description": [
-          "Manutenção de hardware e software em computadores e notebooks.",
-          "Instalação e configuração de redes locais.",
-          "Atendimento ao cliente presencial e remoto.",
-          "Gestão de estoque de peças e equipamentos."
+          "Administração e configuração de sistemas e servidores (Windows Server, Linux).",
+          "Recuperação de servidor atacado por malware com perda de dados mínima.",
+          "Criação de automação de backups que acelerou a resolução de problemas para os clientes.",
+          "Atendimento a clientes via acesso remoto, configuração de roteadores e redes locais."
         ]
       }
     ],
     "projectList": [
       {
+        "key": "scgtr",
+        "name": "SCGTR",
+        "description": "Sistema completo de controle operacional e financeiro para transportadoras. Cadastro de rotas, valores por rota e volume, rastreamento de ocorrências (PNR) e monitoramento de ganhos em tempo real. Construído com ASP.NET Core 9, Entity Framework, SQLite e React.",
+        "github": "https://github.com/jaoguimaraes/scgtr"
+      },
+      {
+        "key": "blog-api",
+        "name": "Blog API",
+        "description": "API RESTful de blog em Node.js com arquitetura em camadas (controllers, models, middlewares). Estrutura completa para gerenciamento de posts e autenticação de usuários.",
+        "github": "https://github.com/jaoguimaraes/blog-api"
+      },
+      {
+        "key": "snake-game",
+        "name": "Snake Game",
+        "description": "Jogo da cobrinha desenvolvido em JavaScript com design responsivo usando Tailwind CSS.",
+        "github": "https://github.com/jaoguimaraes/snake-game",
+        "demo": "https://snake-game-rho-fawn.vercel.app"
+      },
+      {
         "key": "jotawallet",
-        "name": "Em construção",
-        "description": "Aplicativo de gestão financeira pessoal com dashboard intuitivo e relatórios customizáveis."
+        "name": "JotaWallet",
+        "description": "Aplicativo de gestão financeira pessoal com dashboard intuitivo e relatórios customizáveis.",
+        "github": "https://github.com/jaoguimaraes/jotawallet"
       },
       {
         "key": "text-encryption",
-        "name": "Em construção",
-        "description": "Ferramenta para criptografia de textos usando algoritmos AES-256 com interface amigável."
+        "name": "Text Encryptor",
+        "description": "Ferramenta de criptografia de arquivos em TypeScript e Node.js. Recebe um arquivo, criptografa o conteúdo mantendo o formato original e permite descriptografar com o arquivo correspondente.",
+        "github": "https://github.com/jaoguimaraes/project-for-text-encryption"
       }
     ]
   },
   "header": {
     "home": "INÍCIO",
     "about": "SOBRE",
-    "experiencie": "EXPERIÊNCIAS"
+    "experiencie": "EXPERIÊNCIAS",
+    "projects": "PROJETOS"
+  },
+
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Sistemas reais, em produção, construídos do zero.",
+    "ecosystemLabel": "Ecossistema Interno",
+    "ecosystemTitle": "Suite completa de ferramentas para a Euphonia Oratória",
+    "ecosystemDescription": "Todos os projetos abaixo fazem parte de um ecossistema de ferramentas internas que desenvolvi de forma autônoma para a empresa que atuo no momento. Da automação de onboarding com IA, geração de contúdo e publicações em redes sociaos até o acompanhamento de metas dos alunos em tempo real. Cada peça foi construída do zero, integrada com Supabase e pensada para escalar.",
+    "categories": {
+      "all": "Todos",
+      "fullstack": "Full Stack",
+      "automation": "Automação & IA",
+      "tools": "Ferramentas"
+    },
+    "list": [
+      {
+        "key": "ta-euphonia",
+        "name": "TA Euphonia",
+        "description": "Sistema de acompanhamento de metas para 100 ou mais alunos com sincronização em tempo real via Supabase. Permite visualizar progresso individual, acessar as reuniões da mentoria via zoom embedado no ambiente, assistir a podcasts e muito mais.",
+        "tech": ["React 18", "Vite", "TailwindCSS", "Supabase"],
+        "status": "production",
+        "statusLabel": "Em Produção",
+        "category": "fullstack",
+        "featured": true,
+        "github": "",
+        "demo": ""
+      },
+      {
+        "key": "dashboard-atena",
+        "name": "Dashboard Atena",
+        "description": "Dashboard do sistema automatizado de onboarding via WhatsApp com IA (GPT-4o-mini). Visualiza status dos alunos em tempo real e monitora o estado das jornadas em andamento. Permitindo entender quando um aluno tem alguma dificuldade e ali mesmo prestar suporte.",
+        "tech": ["Next.js", "React 19", "TypeScript", "TailwindCSS", "Supabase", "OpenAI", "n8n", "Radix UI"],
+        "status": "production",
+        "statusLabel": "Em Produção",
+        "category": "automation",
+        "featured": true,
+        "github": "",
+        "demo": ""
+      },
+      {
+        "key": "webhook-sender",
+        "name": "Euphonia Admin",
+        "description": "Ferramenta administrativa interna para controle geral do ambiente. Disparo e gerenciamento de mensagens semanais, mensais e avulsas. Ambiente de indicadores com os mais diversos e variados tipos de controle da comunidade.",
+        "tech": ["React 18", "Vite", "TailwindCSS", "Supabase"],
+        "status": "production",
+        "statusLabel": "Em Produção",
+        "category": "tools",
+        "featured": false,
+        "github": "",
+        "demo": ""
+      },
+      {
+        "key": "link-hub",
+        "name": "Link Hub",
+        "description": "Agregador de links pessoal com categorização e sincronização em nuvem. Substitui favoritos do navegador com uma interface limpa, pesquisável e acessível de qualquer dispositivo.",
+        "tech": ["React 19", "Vite", "TailwindCSS", "Supabase"],
+        "status": "production",
+        "statusLabel": "Em Produção",
+        "category": "tools",
+        "featured": false,
+        "github": "",
+        "demo": ""
+      },
+      {
+        "key": "meu-gerenciador",
+        "name": "Meu Gerenciador",
+        "description": "Gerenciador de tarefas completo com projetos, rotinas recorrentes e controle de status por etapas. Suporta frequências diária, semanal, mensal e anual com indicador visual de atrasos e criação de tarefas para equipes.",
+        "tech": ["React 19", "Vite", "TailwindCSS", "Supabase", "React Router"],
+        "status": "production",
+        "statusLabel": "Em Produção",
+        "category": "fullstack",
+        "featured": false,
+        "github": "",
+        "demo": ""
+      }
+    ]
   }
 }

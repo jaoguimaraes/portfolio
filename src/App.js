@@ -4,6 +4,8 @@ import { Routes, Route, Link, useLocation } from "react-router-dom";
 import Home from "./Components/Home";
 import Skills from "./Components/Experiences";
 import About from "./Components/About";
+import Projects from "./Components/Projects";
+import NetworkCanvas from "./Components/NetworkCanvas";
 import "./Styles/App.css";
 import "./i18n";
 import { useTranslation } from "react-i18next";
@@ -19,12 +21,9 @@ function App() {
   };
 
   const [darkMode, setDarkMode] = useState(() => {
-    const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-    return localStorage.getItem("theme")
-      ? localStorage.getItem("theme") === "dark"
-      : prefersDark;
+    const stored = localStorage.getItem("theme");
+    if (stored) return stored === "dark";
+    return true;
   });
 
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -63,6 +62,7 @@ function App() {
 
   return (
     <>
+      <NetworkCanvas />
       <header className={menuOpen ? "mobile-menu-open" : ""}>
         <nav>
           {isMobile && (
@@ -95,6 +95,14 @@ function App() {
                   className={isActive("/experiences") ? "active" : ""}
                 >
                   {t("header.experiencie")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/projects"
+                  className={isActive("/projects") ? "active" : ""}
+                >
+                  {t("header.projects")}
                 </Link>
               </li>
             </ul>
@@ -141,6 +149,14 @@ function App() {
                     {t("header.experiencie")}
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="/projects"
+                    className={isActive("/projects") ? "active" : ""}
+                  >
+                    {t("header.projects")}
+                  </Link>
+                </li>
               </ul>
             </div>
           )}
@@ -152,6 +168,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/experiences" element={<Skills />} />
           <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </main>
     </>

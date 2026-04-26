@@ -1,83 +1,218 @@
 {
   "home": {
-    "title": "Hi, I am <highlight>João Pedro</highlight>",
-    "subtitle": "Backend Developer",
+    "title": "Hi, I'm <highlight>João Pedro</highlight>",
+    "subtitle": "Automation Engineer · Full Stack · N8N · AI",
+    "tagline": "I build systems that work while you sleep.",
+    "currentlyBuilding": "Currently building",
     "highlights": {
-      "item1": "Over 10 years of IT experience working in various sectors",
-      "item2": "Studying Computer Science with a focus on Fullstack",
-      "item3": "Passionate about technology and attentive to market trends",
-      "item4": "The curious and technical professional you were looking for!"
+      "item1": "10+ years across banking, logistics, aeronautics & healthcare",
+      "item2": "N8N + OpenAI specialist — I automate the complex stuff",
+      "item3": "Built an entire internal tool suite from scratch for a live company",
+      "item4": "Open to remote roles worldwide — CLT, PJ or full-time remote"
     },
     "button": "Download Resume",
-    "technologies": "Technologies I work with"
+    "technologies": "My stacks",
+    "stats": {
+      "systems": "systems in production",
+      "students": "students managed",
+      "automations": "automations created",
+      "years": "years in IT"
+    },
+    "demo": {
+      "title": "Try a live automation",
+      "subtitle": "Select a scenario and watch it execute step by step",
+      "placeholder": "Select a scenario to run",
+      "hint": "Runs automatically · click any scenario to take control"
+    },
+    "techCategories": {
+      "automation": "Automation & AI",
+      "backend": "Backend & Databases",
+      "infra": "Infra & DevOps"
+    }
   },
 
   "about": {
     "title": "Who I am and what I do",
-    "description": "Technology professional with over 10 years of experience, I've worked in various IT areas, from customer support to systems and infrastructure maintenance. Currently, I’m focused on web development with experience in technologies like <bold>JavaScript</bold>, <bold>TypeScript</bold>, <bold>Node.js</bold>, <bold>MongoDB</bold>, and <bold>GraphQL</bold>.<br/><br/>Over the past year and a half, I’ve worked on both backend and frontend, seeking to improve my skills and learn from senior professionals. <bold>If you’re looking for a dedicated junior full stack developer with a solid technical foundation, you’ve just found one!</bold>",
+    "description": "Developer with over 10 years of IT experience across demanding sectors including banking, logistics, aeronautics and healthcare. Today my focus is on <bold>intelligent automation and full stack development</bold> helping companies gain time and scale through technology.<br/><br/>I work with <bold>N8N</bold> and <bold>OpenAI</bold> to build high-impact automations, from simple integrations to complex AI-driven flows. On the development side, I use <bold>Node.js</bold>, <bold>TypeScript</bold>, <bold>React</bold>, <bold>GraphQL</bold> and databases like <bold>PostgreSQL (Supabase)</bold> and <bold>MongoDB</bold>, with infrastructure on <bold>AWS (EC2)</bold>.<br/><br/>I have hands-on experience monitoring infrastructure with Zabbix, Grafana and Datadog, which allows me to build solutions with stability and production in mind from day one. <bold>Available for remote or hybrid work, CLT or PJ.</bold>",
     "button": "Download Resume"
   },
 
   "experiences": {
     "professional": "Professional Experiences",
-    "projects": "Personal Projects",
+    "projects": "Repositories",
     "professionalList": [
+      {
+        "company": "Euphonia Oratória",
+        "period": "Sep 2025 - Present",
+        "current": true,
+        "roles": ["Backend Developer (Sep 2025 - Present)"],
+        "description": [
+          "Responsible for developing and maintaining all company automations, connecting tools, APIs and internal flows to increase operational efficiency.",
+          "Created automations with N8N for automatic content generation and publishing on social media.",
+          "Integration between platforms using Supabase, JavaScript and REST APIs.",
+          "Autonomous management of the company's technical infrastructure."
+        ]
+      },
       {
         "company": "Primum",
         "period": "Jan 2024 - Apr 2025",
-        "roles": ["Full stack development (Jan 2024 - Apr 2025)"],
+        "current": false,
+        "roles": ["Full Stack Developer (Jan 2024 - Apr 2025)"],
         "description": [
-          "As a junior full stack developer, I work with technologies like MongoDB, Node.js, React, TypeScript, GraphQL, and RESTful APIs.",
-          "I actively participate in training and pair programming sessions with senior developers, which has accelerated my technical growth.",
-          "I have a solid foundation in agile methodologies, focusing on the Scrum framework as taught in the book Scrum Essentials.",
-          "I contribute to both backend and frontend tasks using React. We use Bitbucket for version control and Figma for visual component standards."
+          "Implemented AI on the platform to answer student questions, reducing human support load.",
+          "Participated in company improvement metrics, generating annual savings of over R$ 100,000.",
+          "Participated in platform migration to a new technology, unifying projects and generating financial savings and client satisfaction.",
+          "Responsible for receiving, analyzing and fixing bugs reported by students on the platform.",
+          "Worked on both backend and frontend using MongoDB, Node.js, React, TypeScript, GraphQL and RESTful APIs."
         ]
       },
       {
         "company": "DM",
         "period": "Oct 2018 - Dec 2024",
+        "current": false,
         "roles": [
-          "NOC - Network Operations Center (Jan 2024 - Dec 2024)",
-          "Sustentation Analyst II (Dec 2021 - Jun 2024)",
+          "NOC - Network Operations Center (Jun 2024 - Dec 2024)",
+          "Systems Analyst (Dec 2021 - Jun 2024)",
           "Junior Support Analyst (Oct 2019 - Dec 2021)",
           "Customer Support Consultant N2 (Mar 2019 - Sep 2019)",
           "Customer Support Consultant N1 (Oct 2018 - Feb 2019)"
         ],
         "description": [
-          "Corporate customer service, network and systems incident analysis and resolution.",
-          "Promoted three times for exceptional performance.",
-          "Actively led a technical support team of 5 members.",
-          "Created technical documentation and trained new employees."
+          "Created and maintained monitoring dashboards with Grafana and alerts with Zabbix.",
+          "Participated in the action that prevented a million-dollar fraud attempt against the company.",
+          "Promoted three times for exceptional performance over 6 years.",
+          "Responsible for sustaining transaction authorizers, maintaining 100% uptime.",
+          "Created automations for banking processes (banking vans, FTP, report reconciliation).",
+          "Led technical support team and created technical documentation."
         ]
       },
       {
         "company": "Lansolution",
         "period": "Mar 2015 - Sep 2017",
+        "current": false,
         "roles": ["IT Technician (Mar 2015 - Sep 2017)"],
         "description": [
-          "Maintenance of hardware and software in computers and notebooks.",
-          "Installation and configuration of local networks.",
-          "On-site and remote customer service.",
-          "Inventory management of parts and equipment."
+          "Administration and configuration of systems and servers (Windows Server, Linux).",
+          "Recovered a server attacked by malware with minimal data loss.",
+          "Created a backup automation that accelerated problem resolution for clients.",
+          "Remote customer service, router configuration and local network setup."
         ]
       }
     ],
     "projectList": [
       {
+        "key": "scgtr",
+        "name": "SCGTR",
+        "description": "Complete operational and financial management system for transportation companies. Register daily routes, define values per route and package, track unresolved occurrences (PNR), and monitor earnings in real-time. Built with ASP.NET Core 9, Entity Framework, SQLite and React.",
+        "github": "https://github.com/jaoguimaraes/scgtr"
+      },
+      {
+        "key": "blog-api",
+        "name": "Blog API",
+        "description": "RESTful blog API built with Node.js following a layered architecture (controllers, models, middlewares). Complete structure for post management and user authentication.",
+        "github": "https://github.com/jaoguimaraes/blog-api"
+      },
+      {
+        "key": "snake-game",
+        "name": "Snake Game",
+        "description": "Classic Snake game built in JavaScript with responsive design using Tailwind CSS.",
+        "github": "https://github.com/jaoguimaraes/snake-game",
+        "demo": "https://snake-game-rho-fawn.vercel.app"
+      },
+      {
         "key": "jotawallet",
-        "name": "Under construction",
-        "description": "Personal finance management app with an intuitive dashboard and customizable reports.."
+        "name": "JotaWallet",
+        "description": "Personal finance management app with an intuitive dashboard and customizable reports.",
+        "github": "https://github.com/jaoguimaraes/jotawallet"
       },
       {
         "key": "text-encryption",
-        "name": "Under construction",
-        "description": "Tool for text encryption using AES-256 algorithms with a user-friendly interface."
+        "name": "Text Encryptor",
+        "description": "File encryption tool built with TypeScript and Node.js. Receives a file, encrypts its content while maintaining the original format, and allows decryption using the corresponding key file.",
+        "github": "https://github.com/jaoguimaraes/project-for-text-encryption"
       }
     ]
   },
   "header": {
     "home": "HOME",
     "about": "ABOUT",
-    "experiencie": "EXPERIENCES"
+    "experiencie": "EXPERIENCES",
+    "projects": "PROJECTS"
+  },
+
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Real systems, in production, built from scratch.",
+    "ecosystemLabel": "Internal Ecosystem",
+    "ecosystemTitle": "A complete internal tool suite built for Euphonia Oratória",
+    "ecosystemDescription": "All projects below are part of an internal tool ecosystem I developed autonomously for the company I currently work for. From AI-powered WhatsApp onboarding automation, content generation and social media publishing to real-time student goal tracking. Each piece was built from scratch, integrated with Supabase, and designed to scale.",
+    "categories": {
+      "all": "All",
+      "fullstack": "Full Stack",
+      "automation": "Automation & AI",
+      "tools": "Tools"
+    },
+    "list": [
+      {
+        "key": "ta-euphonia",
+        "name": "TA Euphonia",
+        "description": "Goal tracking system for 100+ students with real-time sync via Supabase. Allows viewing individual progress, accessing mentorship meetings via embedded Zoom, listening to podcasts and much more.",
+        "tech": ["React 18", "Vite", "TailwindCSS", "Supabase"],
+        "status": "production",
+        "statusLabel": "In Production",
+        "category": "fullstack",
+        "featured": true,
+        "github": "",
+        "demo": ""
+      },
+      {
+        "key": "dashboard-atena",
+        "name": "Atena Dashboard",
+        "description": "Dashboard for the AI-powered WhatsApp onboarding automation system (GPT-4o-mini). Displays student status in real time and monitors active onboarding journeys, allowing you to identify when a student is struggling and provide immediate support.",
+        "tech": ["Next.js", "React 19", "TypeScript", "TailwindCSS", "Supabase", "OpenAI", "n8n", "Radix UI"],
+        "status": "production",
+        "statusLabel": "In Production",
+        "category": "automation",
+        "featured": true,
+        "github": "",
+        "demo": ""
+      },
+      {
+        "key": "webhook-sender",
+        "name": "Euphonia Admin",
+        "description": "Internal admin tool for general environment control. Dispatch and management of weekly, monthly and one-off messages. Indicator dashboard with diverse community control metrics.",
+        "tech": ["React 18", "Vite", "TailwindCSS", "Supabase"],
+        "status": "production",
+        "statusLabel": "In Production",
+        "category": "tools",
+        "featured": false,
+        "github": "",
+        "demo": ""
+      },
+      {
+        "key": "link-hub",
+        "name": "Link Hub",
+        "description": "Personal link aggregator with categorization and cloud sync. Replaces browser bookmarks with a clean, searchable interface accessible from any device.",
+        "tech": ["React 19", "Vite", "TailwindCSS", "Supabase"],
+        "status": "production",
+        "statusLabel": "In Production",
+        "category": "tools",
+        "featured": false,
+        "github": "",
+        "demo": ""
+      },
+      {
+        "key": "meu-gerenciador",
+        "name": "My Task Manager",
+        "description": "Full-featured task manager with projects, recurring routines and step-by-step status control. Supports daily, weekly, monthly and yearly frequencies with a visual overdue indicator and team task creation.",
+        "tech": ["React 19", "Vite", "TailwindCSS", "Supabase", "React Router"],
+        "status": "production",
+        "statusLabel": "In Production",
+        "category": "fullstack",
+        "featured": false,
+        "github": "",
+        "demo": ""
+      }
+    ]
   }
 }
