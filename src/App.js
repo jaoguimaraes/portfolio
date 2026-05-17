@@ -5,6 +5,7 @@ import Home from "./Components/Home";
 import Skills from "./Components/Experiences";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
+import Testimonials from "./Components/Testimonials";
 import NetworkCanvas from "./Components/NetworkCanvas";
 import "./Styles/App.css";
 import "./i18n";
@@ -105,6 +106,14 @@ function App() {
                   {t("header.projects")}
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="/testimonials"
+                  className={isActive("/testimonials") ? "active" : ""}
+                >
+                  {t("header.testimonials")}
+                </Link>
+              </li>
             </ul>
           )}
 
@@ -157,6 +166,14 @@ function App() {
                     {t("header.projects")}
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="/testimonials"
+                    className={isActive("/testimonials") ? "active" : ""}
+                  >
+                    {t("header.testimonials")}
+                  </Link>
+                </li>
               </ul>
             </div>
           )}
@@ -169,6 +186,7 @@ function App() {
           <Route path="/experiences" element={<Skills />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/testimonials" element={<Testimonials />} />
         </Routes>
       </main>
     </>

@@ -14,6 +14,8 @@ import N8NIcon from "../images/icons/n8n.svg";
 import OpenAIIcon from "../images/icons/openai.svg";
 import SupabaseIcon from "../images/icons/supabase.svg";
 import AWSIcon from "../images/icons/aws.svg";
+import RedisIcon from "../images/icons/redis.svg";
+import WhatsAppIcon from "../images/icons/whatsapp.png";
 import "../Styles/Home.css";
 import { motion } from "framer-motion";
 import { Trans, useTranslation } from "react-i18next";
@@ -259,12 +261,14 @@ const TECH = [
   {
     key: "backend",
     icons: [
-      { src: NodeJSIcon,                                   alt: "Node.js",    label: "Node.js"                },
-      { src: TypeScriptIcon,                               alt: "TypeScript", label: "TypeScript"             },
-      { src: ReactJSIcon,                                  alt: "React",      label: "React"                  },
-      { src: MongoDBIcon,                                  alt: "MongoDB",    label: "MongoDB"                },
-      { src: GraphQLIcon,                                  alt: "GraphQL",    label: "GraphQL"                },
-      { src: PostgreSQLIcon,                               alt: "PostgreSQL", label: "PostgreSQL", cls: "lg"  },
+      { src: NodeJSIcon,                                   alt: "Node.js",       label: "Node.js"                  },
+      { src: TypeScriptIcon,                               alt: "TypeScript",    label: "TypeScript"               },
+      { src: ReactJSIcon,                                  alt: "React",         label: "React"                    },
+      { src: MongoDBIcon,                                  alt: "MongoDB",       label: "MongoDB"                  },
+      { src: GraphQLIcon,                                  alt: "GraphQL",       label: "GraphQL"                  },
+      { src: PostgreSQLIcon,                               alt: "PostgreSQL",    label: "PostgreSQL",  cls: "lg"   },
+      { src: RedisIcon,                                    alt: "Redis",         label: "Redis",       cls: "ext"  },
+      { src: WhatsAppIcon,                                 alt: "WhatsApp API",  label: "WhatsApp API"             },
     ],
   },
   {

@@ -30,13 +30,11 @@
       "infra": "Infra & DevOps"
     }
   },
-
   "about": {
     "title": "Quem sou e o que faço",
     "description": "Desenvolvedor com mais de 10 anos de experiência em TI, atuei em setores exigentes como bancário, logístico, aeronáutico e de saúde. Hoje meu foco é em <bold>automações inteligentes e desenvolvimento full stack</bold> ajudando empresas a ganhar tempo e escala com tecnologia.<br/><br/>Trabalho com <bold>N8N</bold> e <bold>OpenAI</bold> para construir automações de alto impacto, desde integrações simples até fluxos complexos com IA. No desenvolvimento, uso <bold>Node.js</bold>, <bold>TypeScript</bold>, <bold>React</bold>, <bold>GraphQL</bold> e bancos como <bold>PostgreSQL (Supabase)</bold> e <bold>MongoDB</bold>, com infraestrutura em <bold>AWS (EC2)</bold>.<br/><br/>Tenho vivência com monitoramento usando Zabbix, Grafana e Datadog, o que me permite construir soluções pensando em estabilidade e produção desde o primeiro dia. <bold>Disponível para trabalho remoto ou híbrido, CLT ou PJ.</bold>",
     "button": "Baixar Currículo"
   },
-
   "experiences": {
     "professional": "Experiências Profissionais",
     "projects": "Repositórios",
@@ -45,7 +43,9 @@
         "company": "Euphonia Oratória",
         "period": "Set 2025 - Presente",
         "current": true,
-        "roles": ["Desenvolvedor Backend (Set 2025 - Presente)"],
+        "roles": [
+          "Desenvolvedor Backend (Set 2025 - Presente)"
+        ],
         "description": [
           "Responsável pelo desenvolvimento e manutenção de todas as automações da empresa, conectando ferramentas, APIs e fluxos internos para aumentar a eficiência operacional.",
           "Criação de automações com N8N para geração e publicação automática de conteúdo em redes sociais.",
@@ -57,7 +57,9 @@
         "company": "Primum",
         "period": "Jan 2024 - Abr 2025",
         "current": false,
-        "roles": ["Desenvolvedor full stack (Jan 2024 - Abr 2025)"],
+        "roles": [
+          "Desenvolvedor full stack (Jan 2024 - Abr 2025)"
+        ],
         "description": [
           "Implementei IA na plataforma para responder dúvidas dos alunos, reduzindo a carga de suporte humano.",
           "Participei das métricas de melhoria da empresa, gerando uma economia anual de mais de R$ 100.000,00.",
@@ -90,7 +92,9 @@
         "company": "Lansolution",
         "period": "Mar 2015 - Set 2017",
         "current": false,
-        "roles": ["Técnico de Informática (Mar 2015 - Set 2017)"],
+        "roles": [
+          "Técnico de Informática (Mar 2015 - Set 2017)"
+        ],
         "description": [
           "Administração e configuração de sistemas e servidores (Windows Server, Linux).",
           "Recuperação de servidor atacado por malware com perda de dados mínima.",
@@ -137,12 +141,42 @@
     "home": "INÍCIO",
     "about": "SOBRE",
     "experiencie": "EXPERIÊNCIAS",
-    "projects": "PROJETOS"
+    "projects": "PROJETOS",
+    "testimonials": "TESTEMUNHOS"
   },
-
+  "testimonials": {
+    "title": "Testemunhos",
+    "subtitle": "O que dizem sobre o meu trabalho",
+    "list": [
+      {
+        "name": "Tauana Santos",
+        "role": "Analista de Sistemas Pleno",
+        "company": "DM",
+        "text": "É raro encontrar talentos como o do João Pedro. Poucas pessoas têm a oportunidade de trabalhar com um bom analista, que sabe o que faz e que também é um ótimo mentor, eu tive essa oportunidade e sou muito grata, pois muita coisa que sei hoje na empresa onde eu trabalho hoje, eu tive o prazer de aprender com ele. 'Ridiculamente eficiente' é a frase que me vem à mente quando penso no João. Trabalhei com ele por quase dois anos na DM, colaborando na equipe de Sistemas. Fiquei particularmente impressionada com a habilidade dele para lidar com os problemas mais difíceis, sem esforço, tinha um domínio sobre todos os sistemas da empresa, que parecia que era algo pessoal da vida dele. É de admirar a habilidade de João Pedro em aprender tudo muito rápido, mesmo se ele não tivesse domínio do assunto, ajudava a resolver, procurava por conta própria o que não sabia, e não porque queria algo em troca, mas, porque sabia que iria ser bom para o time todo, ele pensava na equipe, no melhor para a equipe e para a empresa. A profissional que sou hoje foi construída pelos meus esforços , mas trabalhar com ele e mais um colega nosso me motivou a ser uma analista melhor e mais ágil hoje, e com detalhe importante, trabalhando com qualidade e organização. João seria um trunfo para qualquer equipe, como um membro da equipe ou um líder, ele ganha a minha recomendação mais forte, pois além de ser um profissional de qualidade, ele consegue descontrair a equipe no momento certo e preciso. Qualquer empresa teria a sorte de ter João Pedro como funcionário.",
+        "photo": "/images/TAUANA.jpeg"
+      },
+      {
+        "name": "Barreto",
+        "role": "CEO",
+        "company": "Euphonia Oratória",
+        "text": "Meu irmão, tudo bem? Cara, não sei se já consegui deixar claro minha gratidão a você, mas pqp o João foi a melhor indicação que eu já recebi na vida. Papo 10. Mlk tá voando demais aqui dentro. Tecnicamente evoluindo e muito alinhado com a cultura. Incrível 🙌 Obrigado mesmo. Deu tão certo que tô querendo contratar um segundo João kkkkk",
+        "photo": "/images/barreto.jpeg",
+        "context": "Mensagem do CEO para quem me indicou"
+      }
+    ]
+  },
   "projects": {
     "title": "Projetos",
     "subtitle": "Sistemas reais, em produção, construídos do zero.",
+    "seeDetails": "Ver detalhes",
+    "tapForAnalysis": "Ver análise geral",
+    "seeModules": "Ver os {{count}} módulos",
+    "back": "Voltar",
+    "sar": {
+      "situation": "Situação",
+      "action": "Ação",
+      "result": "Resultado"
+    },
     "ecosystemLabel": "Ecossistema Interno",
     "ecosystemTitle": "Suite completa de ferramentas para a Euphonia Oratória",
     "ecosystemDescription": "Todos os projetos abaixo fazem parte de um ecossistema de ferramentas internas que desenvolvi de forma autônoma para a empresa que atuo no momento. Da automação de onboarding com IA, geração de contúdo e publicações em redes sociaos até o acompanhamento de metas dos alunos em tempo real. Cada peça foi construída do zero, integrada com Supabase e pensada para escalar.",
@@ -155,63 +189,260 @@
     "list": [
       {
         "key": "ta-euphonia",
-        "name": "TA Euphonia",
+        "name": "Comunidade",
         "description": "Sistema de acompanhamento de metas para 100 ou mais alunos com sincronização em tempo real via Supabase. Permite visualizar progresso individual, acessar as reuniões da mentoria via zoom embedado no ambiente, assistir a podcasts e muito mais.",
-        "tech": ["React 18", "Vite", "TailwindCSS", "Supabase"],
+        "cover": "/images/comunidade.png",
+        "flip": true,
+        "tech": [
+          "React 18",
+          "Vite",
+          "TailwindCSS",
+          "Supabase"
+        ],
         "status": "production",
         "statusLabel": "Em Produção",
         "category": "fullstack",
         "featured": true,
         "github": "",
-        "demo": ""
+        "demo": "",
+        "sar": {
+          "situation": "Alunos sem plataforma central para metas, reuniões e conteúdo.",
+          "action": "Suite com 3 módulos via Supabase: metas em tempo real, Zoom embedado e player de podcast.",
+          "result": "100+ alunos em produção. Toda a experiência da mentoria em um único ambiente."
+        },
+        "screenshots": [],
+        "modules": [
+          {
+            "title": "Gestão Inteligente de Metas",
+            "video": "/videos/GIF.mp4",
+            "screenshots": [],
+            "sar": {
+              "situation": "100+ alunos sem forma de acompanhar metas individualmente.",
+              "action": "Módulo de metas com sync em tempo real via Supabase para alunos e equipe.",
+              "result": "Visibilidade total do progresso com alertas visuais para quem está atrasado."
+            }
+          },
+          {
+            "title": "Encontros ao Vivo",
+            "video": "/videos/encontros-e-ta.mp4",
+            "screenshots": [],
+            "sar": {
+              "situation": "Reuniões via Zoom externo faziam o aluno sair da plataforma.",
+              "action": "Zoom embedado diretamente na plataforma.",
+              "result": "Aluno participa das reuniões sem trocar de ferramenta."
+            }
+          },
+          {
+            "title": "Conteúdo & Podcast",
+            "video": "/videos/podcasts.mp4",
+            "screenshots": [],
+            "sar": {
+              "situation": "Conteúdo em áudio espalhado em plataformas externas.",
+              "action": "Player de podcast integrado com episódios organizados por módulo.",
+              "result": "Consumo de conteúdo dentro do mesmo ambiente, sem sair da plataforma."
+            }
+          }
+        ]
       },
       {
         "key": "dashboard-atena",
         "name": "Dashboard Atena",
         "description": "Dashboard do sistema automatizado de onboarding via WhatsApp com IA (GPT-4o-mini). Visualiza status dos alunos em tempo real e monitora o estado das jornadas em andamento. Permitindo entender quando um aluno tem alguma dificuldade e ali mesmo prestar suporte.",
-        "tech": ["Next.js", "React 19", "TypeScript", "TailwindCSS", "Supabase", "OpenAI", "n8n", "Radix UI"],
+        "tech": [
+          "Next.js",
+          "React 19",
+          "TypeScript",
+          "TailwindCSS",
+          "Supabase",
+          "OpenAI",
+          "n8n",
+          "Radix UI",
+          "WhatsApp API"
+        ],
         "status": "production",
         "statusLabel": "Em Produção",
         "category": "automation",
         "featured": true,
         "github": "",
-        "demo": ""
+        "demo": "",
+        "screenshots": [],
+        "sar": {
+          "situation": "Onboarding manual, sem visibilidade de progresso ou alertas de dificuldade.",
+          "action": "Dashboard + automação via WhatsApp com IA (GPT-4o-mini) e n8n, com status em tempo real.",
+          "result": "Onboarding 100% automatizado. Equipe identifica e age quando um aluno trava."
+        },
+        "cover": "/images/dashboard-atena.png",
+        "modules": [],
+        "video": "/videos/dashboard-atena.mp4"
       },
       {
         "key": "webhook-sender",
         "name": "Euphonia Admin",
         "description": "Ferramenta administrativa interna para controle geral do ambiente. Disparo e gerenciamento de mensagens semanais, mensais e avulsas. Ambiente de indicadores com os mais diversos e variados tipos de controle da comunidade.",
-        "tech": ["React 18", "Vite", "TailwindCSS", "Supabase"],
+        "tech": [
+          "React 18",
+          "Vite",
+          "TailwindCSS",
+          "Supabase",
+          "WhatsApp API"
+        ],
         "status": "production",
         "statusLabel": "Em Produção",
         "category": "tools",
         "featured": false,
         "github": "",
-        "demo": ""
+        "demo": "",
+        "screenshots": [],
+        "sar": {
+          "situation": "Gestão dispersa: disparos manuais, sem indicadores e sem painel central.",
+          "action": "Ferramenta admin com disparos programados (semanal, mensal, avulso) e painel de indicadores.",
+          "result": "Operação centralizada, tarefas manuais eliminadas e visibilidade total da comunidade."
+        },
+        "cover": "/images/painel-admin.png",
+        "modules": [
+          {
+            "title": "Webhook Sender",
+            "video": "/videos/webhook-sender.mp4",
+            "screenshots": [],
+            "sar": {
+              "situation": "Testar integrações de pagamento exigia acionar o gateway real.",
+              "action": "Ferramenta que busca um cliente e dispara eventos simulados (confirmado, atrasado, reembolsado).",
+              "result": "Testes em segundos sem depender do gateway. Debug de automações drasticamente mais rápido."
+            }
+          },
+          {
+            "title": "Gestão de Onboarding",
+            "video": "/videos/gestao-onboarding.mp4",
+            "screenshots": [],
+            "sar": {
+              "situation": "Acompanhar a etapa de onboarding de cada aluno exigia consultas manuais.",
+              "action": "Painel que exibe a etapa atual e permite avançar, corrigir ou redesparar mensagens.",
+              "result": "Controle total do fluxo sem tocar no banco de dados."
+            }
+          },
+          {
+            "title": "Indicadores",
+            "video": "/videos/indicadores.mp4",
+            "screenshots": [],
+            "sar": {
+              "situation": "Sem visão consolidada da saúde individual, da turma e da comunidade.",
+              "action": "Três painéis: por aluno, visão geral e comunidade.",
+              "result": "Decisões em tempo real com identificação imediata de alunos em risco."
+            }
+          },
+          {
+            "title": "Disparos",
+            "video": "/videos/disparos.mp4",
+            "screenshots": [],
+            "sar": {
+              "situation": "Disparos de WhatsApp feitos manualmente, um a um.",
+              "action": "Dois fluxos automatizados: mensal (cobrança) e semanal (acompanhamento), com logs completos.",
+              "result": "Disparos em massa em minutos. Processo manual de comunicação eliminado."
+            }
+          },
+          {
+            "title": "Gestão de Mentorias",
+            "video": "/videos/gestao-mentorias.mp4",
+            "screenshots": [],
+            "sar": {
+              "situation": "Sessões, presenças e tipos de reunião gerenciados em planilhas externas.",
+              "action": "Módulo completo de sessões, tipos de mentoria e registro de presença por aluno.",
+              "result": "Histórico centralizado integrado ao perfil de cada aluno."
+            }
+          },
+          {
+            "title": "Fotos dos Alunos",
+            "video": "/videos/enviar-fotos.mp4",
+            "screenshots": [],
+            "sar": {
+              "situation": "Fotos de perfil ausentes ou desatualizadas na plataforma.",
+              "action": "Upload com busca de aluno, preview e armazenamento no Supabase Storage.",
+              "result": "Atualização de foto em segundos com controle total da equipe."
+            }
+          }
+        ]
       },
       {
         "key": "link-hub",
         "name": "Link Hub",
         "description": "Agregador de links pessoal com categorização e sincronização em nuvem. Substitui favoritos do navegador com uma interface limpa, pesquisável e acessível de qualquer dispositivo.",
-        "tech": ["React 19", "Vite", "TailwindCSS", "Supabase"],
+        "tech": [
+          "React 19",
+          "Vite",
+          "TailwindCSS",
+          "Supabase"
+        ],
         "status": "production",
         "statusLabel": "Em Produção",
         "category": "tools",
         "featured": false,
         "github": "",
-        "demo": ""
+        "demo": "",
+        "screenshots": [],
+        "sar": {
+          "situation": "Links espalhados em favoritos de múltiplos dispositivos, sem organização.",
+          "action": "Agregador com categorização, busca e sync em nuvem via Supabase.",
+          "result": "Acesso instantâneo a todos os links de qualquer dispositivo."
+        },
+        "cover": "/images/link-hub.png",
+        "modules": [],
+        "video": "/videos/links.mp4"
       },
       {
         "key": "meu-gerenciador",
         "name": "Meu Gerenciador",
         "description": "Gerenciador de tarefas completo com projetos, rotinas recorrentes e controle de status por etapas. Suporta frequências diária, semanal, mensal e anual com indicador visual de atrasos e criação de tarefas para equipes.",
-        "tech": ["React 19", "Vite", "TailwindCSS", "Supabase", "React Router"],
+        "tech": [
+          "React 19",
+          "Vite",
+          "TailwindCSS",
+          "Supabase",
+          "React Router"
+        ],
         "status": "production",
         "statusLabel": "Em Produção",
         "category": "fullstack",
         "featured": false,
         "github": "",
-        "demo": ""
+        "demo": "",
+        "screenshots": [],
+        "sar": {
+          "situation": "Sem sistema para gerenciar tarefas recorrentes, projetos e rotinas de equipe.",
+          "action": "Gerenciador com projetos, rotinas (diária a anual), status por etapas e alertas de atraso.",
+          "result": "Em produção gerenciando projetos e rotinas diárias com visibilidade imediata de pendências."
+        },
+        "cover": "/images/gerenciador-tarefas.png",
+        "modules": [],
+        "video": "/videos/gerenciador-tarefas.mp4"
+      },
+      {
+        "key": "onboarding",
+        "name": "Onboarding",
+        "description": "Processo de integração de novos alunos 100% conduzido por IA. A Atena guia cada aluno pelo onboarding completo: inserção nos grupos, agendamento das primeiras reuniões, entrega de credenciais e apresentação da mentoria — sem intervenção manual da equipe.",
+        "cover": "/images/onboarding.png",
+        "flip": true,
+        "tech": [
+          "React 18",
+          "Vite",
+          "TailwindCSS",
+          "Supabase",
+          "OpenAI",
+          "WhatsApp API"
+        ],
+        "status": "production",
+        "statusLabel": "Em Produção",
+        "category": "automation",
+        "featured": true,
+        "github": "",
+        "demo": "",
+        "sar": {
+          "situation": "Cada novo aluno exigia integração manual: grupos, reuniões, credenciais.",
+          "action": "Onboarding conversacional conduzido pela Atena (IA) via Supabase Edge Functions e OpenAI.",
+          "result": "Integração 100% automatizada. Mesma experiência consistente do boas-vindas ao primeiro acesso."
+        },
+        "screenshots": [],
+        "modules": [],
+        "video": "/videos/onboarding.mp4"
       }
     ]
   }
